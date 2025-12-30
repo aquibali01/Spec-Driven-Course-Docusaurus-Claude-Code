@@ -44,4 +44,20 @@ The curriculum progresses from robot middleware (ROS 2), to digital twins and si
 
 ---
 
-## Repository Layout
+## Spec-Driven Workflow
+
+/sp.constitution defines global rules and success criteria
+
+/sp.specify defines module-level scope and intent
+
+/sp.plan defines execution and validation strategy
+
+Claude Code consumes these specs to generate consistent, auditable content.
+
+Status
+
+🚧 Active development
+
+✔ Spec-complete
+
+✔ Docusaurus-ready
