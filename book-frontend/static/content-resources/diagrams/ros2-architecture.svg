@@ -1,0 +1,45 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .node { fill: #4e7ac7; stroke: #333; stroke-width: 2; }
+    .topic { fill: #42b549; stroke: #333; stroke-width: 2; }
+    .arrow { stroke: #666; stroke-width: 2; marker-end: url(#arrowhead); }
+    .label { font-family: Arial, sans-serif; font-size: 14px; text-anchor: middle; }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+      refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+  </defs>
+
+  <!-- AI Agent Node -->
+  <rect x="50" y="150" width="120" height="60" class="node" rx="10" />
+  <text x="110" y="180" class="label" fill="white">AI Agent</text>
+  <text x="110" y="195" class="label" fill="white">Node</text>
+
+  <!-- Sensor Node -->
+  <rect x="300" y="80" width="120" height="60" class="node" rx="10" />
+  <text x="360" y="110" class="label" fill="white">Sensor</text>
+  <text x="360" y="125" class="label" fill="white">Node</text>
+
+  <!-- Actuator Node -->
+  <rect x="300" y="220" width="120" height="60" class="node" rx="10" />
+  <text x="360" y="250" class="label" fill="white">Actuator</text>
+  <text x="360" y="265" class="label" fill="white">Node</text>
+
+  <!-- ROS 2 Middleware (DDS) -->
+  <ellipse cx="550" cy="180" rx="100" ry="100" class="topic" />
+  <text x="550" y="170" class="label" fill="white">ROS 2</text>
+  <text x="550" y="190" class="label" fill="white">DDS</text>
+  <text x="550" y="210" class="label" fill="white">Middleware</text>
+
+  <!-- Arrows -->
+  <line x1="170" y1="180" x2="300" y2="110" class="arrow" />
+  <line x1="170" y1="180" x2="300" y2="250" class="arrow" />
+  <line x1="420" y1="110" x2="480" y2="150" class="arrow" />
+  <line x1="420" y1="250" x2="480" y2="210" class="arrow" />
+
+  <!-- Legend -->
+  <text x="50" y="350" class="label" font-size="16" font-weight="bold">ROS 2 Architecture: AI Agent Communicating with Sensors and Actuators</text>
+</svg>

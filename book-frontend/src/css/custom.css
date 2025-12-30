@@ -1,0 +1,91 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Custom styles for ROS 2 content */
+.ros2-architecture-diagram {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 20px 0;
+  background-color: #f9f9f9;
+}
+
+.ros2-architecture-diagram h4 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.ros2-component {
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 4px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.ai-agent {
+  background-color: #3498db;
+  color: white;
+}
+
+.ros2-middleware {
+  background-color: #9b59b6;
+  color: white;
+}
+
+.robot-components {
+  background-color: #e74c3c;
+  color: white;
+}
+
+/* Code block enhancements */
+.code-block-ai-controller {
+  background-color: #e8f4fd;
+  border-left: 4px solid #3498db;
+}
+
+.code-block-ros2-integration {
+  background-color: #f8f4e9;
+  border-left: 4px solid #f39c12;
+}
+
+/* Custom admonitions */
+.admonition-ros2-tip {
+  border-color: #3498db;
+}
+
+.admonition-ros2-warning {
+  border-color: #f39c12;
+}
+
+.admonition-ros2-important {
+  border-color: #e74c3c;
+}

@@ -1,0 +1,17 @@
+{
+  "ROS": "Robot Operating System - A flexible framework for writing robot software",
+  "ROS 2": "The second generation of Robot Operating System with improved architecture",
+  "Node": "A process that performs computation in ROS",
+  "Topic": "A named bus over which nodes exchange messages",
+  "Service": "A synchronous request/response communication pattern",
+  "Action": "A goal-oriented communication pattern with feedback",
+  "URDF": "Unified Robot Description Format - XML format for representing robot models",
+  "rclpy": "Python client library for ROS 2",
+  "QoS": "Quality of Service - Policies that govern communication behavior",
+  "DDS": "Data Distribution Service - Middleware used by ROS 2",
+  "Humble Hawksbill": "ROS 2 distribution version",
+  "Publisher": "Entity that sends messages on a topic",
+  "Subscriber": "Entity that receives messages from a topic",
+  "Message": "Data structure used for communication between nodes",
+  "Package": "A container for organizing ROS functionality"
+}

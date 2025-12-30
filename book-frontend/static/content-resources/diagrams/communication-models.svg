@@ -1,0 +1,114 @@
+<svg width="900" height="600" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .node { fill: #4e7ac7; stroke: #333; stroke-width: 2; }
+    .topic { fill: #42b549; stroke: #333; stroke-width: 2; }
+    .service { fill: #f39c12; stroke: #333; stroke-width: 2; }
+    .action { fill: #9b59b6; stroke: #333; stroke-width: 2; }
+    .arrow { stroke: #666; stroke-width: 2; marker-end: url(#arrowhead); }
+    .label { font-family: Arial, sans-serif; font-size: 14px; text-anchor: middle; }
+    .title { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; text-anchor: middle; }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+      refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="450" y="30" class="title">ROS 2 Communication Patterns</text>
+
+  <!-- Topic Communication (Publish/Subscribe) -->
+  <g transform="translate(50, 60)">
+    <text x="150" y="0" class="title">Topics (Publish/Subscribe)</text>
+
+    <!-- Publisher Node -->
+    <rect x="20" y="20" width="100" height="50" class="node" rx="10" />
+    <text x="70" y="45" class="label" fill="white">Publisher</text>
+
+    <!-- Topic -->
+    <rect x="180" y="30" width="100" height="30" class="topic" rx="5" />
+    <text x="230" y="50" class="label" fill="white">Topic</text>
+
+    <!-- Subscriber 1 -->
+    <rect x="340" y="10" width="100" height="50" class="node" rx="10" />
+    <text x="390" y="35" class="label" fill="white">Subscriber</text>
+
+    <!-- Subscriber 2 -->
+    <rect x="340" y="70" width="100" height="50" class="node" rx="10" />
+    <text x="390" y="95" class="label" fill="white">Subscriber</text>
+
+    <!-- Arrows -->
+    <line x1="120" y1="45" x2="180" y2="45" class="arrow" />
+    <line x1="280" y1="45" x2="340" y2="35" class="arrow" />
+    <line x1="280" y1="45" x2="340" y2="95" class="arrow" />
+  </g>
+
+  <!-- Service Communication (Request/Response) -->
+  <g transform="translate(50, 200)">
+    <text x="150" y="0" class="title">Services (Request/Response)</text>
+
+    <!-- Client Node -->
+    <rect x="20" y="30" width="100" height="50" class="node" rx="10" />
+    <text x="70" y="55" class="label" fill="white">Client</text>
+
+    <!-- Service -->
+    <rect x="180" y="30" width="100" height="50" class="service" rx="5" />
+    <text x="230" y="55" class="label" fill="white">Service</text>
+
+    <!-- Server Node -->
+    <rect x="340" y="30" width="100" height="50" class="node" rx="10" />
+    <text x="390" y="55" class="label" fill="white">Server</text>
+
+    <!-- Arrows -->
+    <line x1="120" y1="55" x2="180" y2="55" class="arrow" />
+    <line x1="280" y1="55" x2="340" y2="55" class="arrow" />
+  </g>
+
+  <!-- Action Communication (Goal/Feedback/Result) -->
+  <g transform="translate(50, 350)">
+    <text x="150" y="0" class="title">Actions (Goal/Feedback/Result)</text>
+
+    <!-- Client Node -->
+    <rect x="20" y="30" width="100" height="50" class="node" rx="10" />
+    <text x="70" y="55" class="label" fill="white">Action Client</text>
+
+    <!-- Action Server -->
+    <rect x="180" y="30" width="100" height="50" class="action" rx="5" />
+    <text x="230" y="55" class="label" fill="white">Action Server</text>
+
+    <!-- Server Node -->
+    <rect x="340" y="30" width="100" height="50" class="node" rx="10" />
+    <text x="390" y="55" class="label" fill="white">Action Server</text>
+
+    <!-- Feedback arrow -->
+    <line x1="390" y1="30" x2="230" y2="30" class="arrow" stroke="#666" stroke-width="1" marker-end="url(#arrowhead)" />
+    <text x="310" y="25" class="label" font-size="12">Feedback</text>
+
+    <!-- Goal arrow -->
+    <line x1="120" y1="55" x2="180" y2="55" class="arrow" />
+    <text x="150" y="50" class="label" font-size="12">Goal</text>
+
+    <!-- Result arrow -->
+    <line x1="280" y1="55" x2="340" y2="55" class="arrow" />
+    <text x="310" y="50" class="label" font-size="12">Result</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(600, 100)">
+    <text x="0" y="0" class="title">Legend</text>
+
+    <rect x="0" y="20" width="20" height="20" class="node" />
+    <text x="30" y="35" class="label" font-size="12" text-anchor="start">Node</text>
+
+    <rect x="0" y="50" width="20" height="20" class="topic" />
+    <text x="30" y="65" class="label" font-size="12" text-anchor="start">Topic</text>
+
+    <rect x="0" y="80" width="20" height="20" class="service" />
+    <text x="30" y="95" class="label" font-size="12" text-anchor="start">Service</text>
+
+    <rect x="0" y="110" width="20" height="20" class="action" />
+    <text x="30" y="125" class="label" font-size="12" text-anchor="start">Action</text>
+  </g>
+</svg>
